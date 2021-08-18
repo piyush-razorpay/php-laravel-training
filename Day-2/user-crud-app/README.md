@@ -1,5 +1,5 @@
 ## API Spec:
-##### BASE_URL = 127.0.0.1:8080
+##### BASE_URL = 127.0.0.1:8000
 1. GET {BASE_URL}/users
 2. POST {BASE_URL}/users -
 Request body: 
