@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-    return "hello world!";
-});
+Route::post('/users', 'PersonsController@createPerson');
+Route::get('/users', 'PersonsController@getAllPersons');
+Route::get('/users/{id}', 'PersonsController@getPersonById');
+Route::delete('/users/{id}', 'PersonsController@deletePersonById');
+Route::patch('/users/{id}', 'PersonsController@updatePersonById');
